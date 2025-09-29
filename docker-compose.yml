@@ -1,0 +1,18 @@
+ version: '3.8'
+services:
+ backend:
+   build: ./backend
+   ports:
+     - "4000:4000"
+ frontend:
+   build: ./frontend
+   ports:
+     - "3000:3000"
+ contracts:
+   build: ./contracts
+   ports:
+     - "8545:8545"
+ ml-service:
+   build: ./ml-service
+   ports:
+     - "5000:5000"
